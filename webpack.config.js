@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== "production";
 const path = require('path');
 
 module.exports = {
@@ -27,7 +26,7 @@ module.exports = {
           {
             test: /\.css$/i,
             use: [
-                devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+                MiniCssExtractPlugin.loader,
                 "css-loader",
                 "postcss-loader"
             ],
