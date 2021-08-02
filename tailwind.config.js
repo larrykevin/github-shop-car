@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './public/index.html',
+    './public/pages/pride.html'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

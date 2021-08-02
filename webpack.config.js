@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 const path = require('path');
 
 module.exports = {
@@ -25,7 +27,7 @@ module.exports = {
           {
             test: /\.css$/i,
             use: [
-                "style-loader",
+                devMode ? "style-loader" : MiniCssExtractPlugin.loader,
                 "css-loader",
                 "postcss-loader"
             ],
@@ -37,6 +39,12 @@ module.exports = {
             inject: true,
             template: './public/index.html',
             filename: './index.html'
-        })
+        }),
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: './public/pages/pride.html',
+            filename: './pages/pride.html'
+        }),
+        new MiniCssExtractPlugin(),
     ],
 }
