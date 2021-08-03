@@ -3,3 +3,23 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Konkret Grotesk Pro';
+    src: url('../assets/fonts/KonkretGroteskPro-Regular.woff2') format('woff2'),
+        url('../assets/fonts/KonkretGroteskPro-Regular.woff') format('woff'),
+        url('../assets/fonts/KonkretGroteskPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Konkret Grotesk Pro';
+    src: url('../assets/fonts/KonkretGroteskPro-Bold.woff2') format('woff2'),
+        url('../assets/fonts/KonkretGroteskPro-Bold.woff') format('woff'),
+        url('../assets/fonts/KonkretGroteskPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+}

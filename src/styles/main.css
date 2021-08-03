@@ -588,6 +588,30 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+@font-face {
+  font-family: 'Konkret Grotesk Pro';
+
+  src: url('../assets/fonts/KonkretGroteskPro-Regular.woff2') format('woff2'),
+        url('../assets/fonts/KonkretGroteskPro-Regular.woff') format('woff'),
+        url('../assets/fonts/KonkretGroteskPro-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Konkret Grotesk Pro';
+
+  src: url('../assets/fonts/KonkretGroteskPro-Bold.woff2') format('woff2'),
+        url('../assets/fonts/KonkretGroteskPro-Bold.woff') format('woff'),
+        url('../assets/fonts/KonkretGroteskPro-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
 .container {
   width: 100%;
 }
@@ -22366,6 +22390,10 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-grotesk {
+  font-family: 'Konkret Grotesk Pro', sans-serif;
 }
 
 .text-xs {
@@ -53947,6 +53975,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-grotesk {
+    font-family: 'Konkret Grotesk Pro', sans-serif;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -85172,6 +85204,10 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-grotesk {
+    font-family: 'Konkret Grotesk Pro', sans-serif;
   }
 
   .md\:text-xs {
@@ -116401,6 +116437,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-grotesk {
+    font-family: 'Konkret Grotesk Pro', sans-serif;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -147628,6 +147668,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-grotesk {
+    font-family: 'Konkret Grotesk Pro', sans-serif;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -178853,6 +178897,10 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-grotesk {
+    font-family: 'Konkret Grotesk Pro', sans-serif;
   }
 
   .\32xl\:text-xs {
