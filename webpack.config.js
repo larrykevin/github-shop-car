@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename: 'main.js'
     },
     resolve: {
         extensions: ['.js']
@@ -20,7 +20,7 @@ module.exports = {
             use: {
                 loader: 'babel-loader',
                 options: {
-                presets: ['@babel/preset-env']
+                    presets: ['@babel/preset-env']
                 }
             }
           },
@@ -32,6 +32,13 @@ module.exports = {
                 "postcss-loader"
             ],
           },
+          {
+            test: /\.(woff|woff2|ttf)$/,
+            type: "asset/resource",
+            generator: {
+              filename: "assets/fonts/[name][ext]"
+            }
+          }
         ]
     },
     plugins: [
@@ -50,6 +57,9 @@ module.exports = {
             patterns: [
                 { from: path.resolve(__dirname, "src", "assets/images"),
                     to: "assets/images"
+                },
+                { from: path.resolve(__dirname, "src", "assets/fonts"),
+                    to: "assets/fonts"
                 }
             ]
         }),
